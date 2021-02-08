@@ -36,6 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void passpage() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,13 +48,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
+            //Image(image: AssetImage('quiz.png')),
+            //Image.asset('assets\images\quiz.png'),
+            Text('Quizzer'),
+            Text('Take the quiz and find your score!'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            //floatingActionButton: FloatingActionButton()
           ],
         ),
       ),
